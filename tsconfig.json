@@ -1,13 +1,21 @@
 {
   "extends": "expo/tsconfig.base",
-  "compilerOptions": {
-    "strict": true,
-    "paths": {
-      "@/*": [
-        "./*"
-      ]
-    }
-  },
+"compilerOptions": {
+  "target": "esnext",
+  "module": "NodeNext",
+  "moduleResolution": "nodenext",
+  "jsx": "react-jsx",
+  "strict": true,
+  "allowJs": true,
+  "skipLibCheck": true,
+  "esModuleInterop": true,
+  "forceConsistentCasingInFileNames": true,
+  "noEmit": true,
+  "baseUrl": ".",
+  "paths": {
+    "@/*": ["./*"]
+  }
+},
   "include": [
     "**/*.ts",
     "**/*.tsx",
